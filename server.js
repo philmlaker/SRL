@@ -6,7 +6,6 @@
 var express = require("express");
 var mongojs = require("mongojs");
 var logger = require("morgan");
-var mongojs = require("mongojs");
 var bodyParser = require('body-parser');
 var app = express();
 app.use(bodyParser());
@@ -191,8 +190,6 @@ app.post("/submit", function(req, res) {
 
 
 // Set the app to listen on port 3000
-app.listen(3000, function() {
-  console.log("App running on port 3000!");
-});
+app.listen(process.env.PORT || 3000);
 
 
