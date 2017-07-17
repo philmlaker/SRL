@@ -3,19 +3,18 @@
  * ========================= */
 
 // Dependencies
-process.env.PWD = process.cwd()
 var express = require("express");
 var mongojs = require("mongojs");
 var logger = require("morgan");
 var bodyParser = require('body-parser');
 var app = express();
 app.use(bodyParser());
-var path = require("path");
+
 // Initialize Express
 
 
 // Set up a static folder (public) for our web app
-app.use('/static', express.static(path.join(__dirname, 'Public')));
+app.use(express.static("public"));
 
 // Database configuration
 // Save the URL of our database as well as the name of our collection
