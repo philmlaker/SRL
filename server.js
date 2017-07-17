@@ -38,7 +38,7 @@ db.on("error", function(error) {
 // 1. At the root path, send a simple hello world message to the browser
 app.get("/", function(req, res) {
   
-   res.sendFile('index.html');
+   res.sendfile('index.html');
 });
 
 // 2. At the "/all" path, display every entry in the animals collection
