@@ -38,7 +38,7 @@ db.on("error", function(error) {
 // 1. At the root path, send a simple hello world message to the browser
 app.get("/", function(req, res) {
   
-   res.sendfile('public/home.html');
+   res.sendFile('index.html');
 });
 
 // 2. At the "/all" path, display every entry in the animals collection
@@ -190,6 +190,8 @@ app.post("/submit", function(req, res) {
 
 
 // Set the app to listen on port 3000
-app.listen(process.env.PORT || 3000);
+// app.listen(process.env.PORT || 3000);
 
-
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!')
+});
