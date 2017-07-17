@@ -3,6 +3,7 @@
  * ========================= */
 
 // Dependencies
+process.env.PWD = process.cwd()
 var express = require("express");
 var mongojs = require("mongojs");
 var logger = require("morgan");
@@ -14,7 +15,7 @@ app.use(bodyParser());
 
 
 // Set up a static folder (public) for our web app
-app.use(express.static(__dirname + '/Public'));
+app.use(express.static(process.env.PWD + '/Public'));
 
 
 // Database configuration
