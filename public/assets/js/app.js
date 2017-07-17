@@ -245,7 +245,7 @@ $.ajax({
 
 $(document).on('click', '#dept', function(){
        $(".category").css("color", "#002b5c");
-        $(".category").css("background-color", "#e4e4e4");
+        $(".category").css("background-color", "rgba(228, 228, 228, 0)");
 
      $(this).css("background-color", "#002b5c");
       $(this).css("color", "white");
