@@ -15,9 +15,7 @@ var path = require("path");
 
 
 // Set up a static folder (public) for our web app
-app.set('views', path.join(process.env.PWD, 'Public'));
-
-app.use(express.static(path.join(process.env.PWD, 'Public')));
+app.use('/static', express.static(path.join(__dirname, 'Public')));
 
 // Database configuration
 // Save the URL of our database as well as the name of our collection
