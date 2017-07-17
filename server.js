@@ -10,13 +10,14 @@ var logger = require("morgan");
 var bodyParser = require('body-parser');
 var app = express();
 app.use(bodyParser());
-
+var path = require("path");
 // Initialize Express
 
 
 // Set up a static folder (public) for our web app
-app.use(express.static(process.env.PWD + '/Public'));
+app.set('views', path.join(process.env.PWD, 'Public'));
 
+app.use(express.static(path.join(process.env.PWD, 'Public')));
 
 // Database configuration
 // Save the URL of our database as well as the name of our collection
