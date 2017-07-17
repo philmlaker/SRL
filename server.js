@@ -14,7 +14,8 @@ app.use(bodyParser());
 
 
 // Set up a static folder (public) for our web app
-app.use(express.static("Public"));
+app.use(express.static(__dirname + '/Public'));
+
 
 // Database configuration
 // Save the URL of our database as well as the name of our collection
