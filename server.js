@@ -14,9 +14,8 @@ app.use(bodyParser());
 
 
 // Set up a static folder (public) for our web app
-// app.use(express.static("public"));
-app.use("/Public", express.static(__dirname + '/Public'));
- app.use('/static', express.static(__dirname + '/Public'));
+app.use(express.static("Public"));
+
 // Database configuration
 // Save the URL of our database as well as the name of our collection
 var databaseUrl = "mydb";
