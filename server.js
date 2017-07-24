@@ -3,14 +3,14 @@
  * ========================= */
 
 // Dependencies
+var mongoose = require('mongoose');
 var express = require("express");
 var mongojs = require("mongojs");
 var logger = require("morgan");
 var bodyParser = require('body-parser');
 var app = express();
 app.use(bodyParser());
-mongoose.connect('mongodb://pmlaker:Megan2305@ds157702.mlab.com:57702/heroku_r45mjcns');
-db = mongoose.connect(uri);
+db = mongoose.connect('mongodb://pmlaker:Megan2305@ds157702.mlab.com:57702/heroku_r45mjcns');
 // Initialize Express
 
 
