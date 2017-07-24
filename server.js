@@ -4,6 +4,7 @@
 
 // Dependencies
 var mongoose = require('mongoose');
+var mongoClient = require('mongodb').MongoClient;
 var express = require("express");
 var mongojs = require("mongojs");
 var logger = require("morgan");
@@ -15,15 +16,7 @@ var uri = 'mongodb://pmlaker:Megan2305@ds157702.mlab.com:57702/heroku_r45mjcns';
 
 
 
-mongoose.connect(uri)
-    .then(() => { // if all is ok we will be here
-      console.log('Connected');
-    })
-    .catch(err => { // if error we will be here
-        console.error('App starting error:', err.stack);
-        process.exit(1);
-    });
-// Initialize Express
+
 
 
 // Set up a static folder (public) for our web app
@@ -119,7 +112,10 @@ app.get("/find/:id", function(req, res) {
   app.get("/find/dept/:id", function(req, res) {
   var test_id = req.param('id');
 
-  db.myCollection.find({ $or: [ { "WebsiteCategory": test_id }, { "WebsiteCategory2": test_id } ] }, function(error, found) {
+  mongoClient.connect(uri, function (err, db){ 
+      if (err)
+        throw err;
+        db.myCollection.find({ $or: [ { "WebsiteCategory": test_id }, { "WebsiteCategory2": test_id } ] }, function(error, found) {
     // Log any errors if the server encounters one
     if (error) {
       console.log(error);
@@ -130,8 +126,13 @@ app.get("/find/:id", function(req, res) {
       console.log("From server");
       console.log(found);
       
-    }
+    };
   });
+
+
+  })
+
+
   });
 
 
