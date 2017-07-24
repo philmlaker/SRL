@@ -79,7 +79,7 @@ app.get("/find2/:id", function(req, res) {
 
 
 
-  db2.allTests.find({"TestName": {$regex:test_id2, $options: 'i'} }, function(error, found) {
+  db.allTests.find({"TestName": {$regex:test_id2, $options: 'i'} }, function(error, found) {
     // Log any errors if the server encounters one
     if (error) {
       console.log(error);
@@ -103,7 +103,7 @@ app.get("/find2/:id", function(req, res) {
 app.get("/find/:id", function(req, res) {
   var test_id = req.param('id');
 
-  db2.allTests.find({"Test": test_id }, function(error, found) {
+  db.allTests.find({"Test": test_id }, function(error, found) {
     // Log any errors if the server encounters one
     if (error) {
       console.log(error);
