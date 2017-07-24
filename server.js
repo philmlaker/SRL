@@ -10,8 +10,19 @@ var logger = require("morgan");
 var bodyParser = require('body-parser');
 var app = express();
 app.use(bodyParser());
-var db = mongoose.connect('mongodb://pmlaker:Megan2305@ds157702.mlab.com:57702/heroku_r45mjcns');
-var db2 = mongoose.connect('mongodb://pmlaker:Megan2305@ds157702.mlab.com:57702/heroku_r45mjcns');
+var uri = 'mongodb://pmlaker:Megan2305@ds157702.mlab.com:57702/heroku_r45mjcns';
+
+
+
+
+mongoose.connect(uri)
+    .then(() => { // if all is ok we will be here
+      console.log('Connected');
+    })
+    .catch(err => { // if error we will be here
+        console.error('App starting error:', err.stack);
+        process.exit(1);
+    });
 // Initialize Express
 
 
@@ -20,11 +31,11 @@ app.use(express.static("public"));
 
 // Database configuration
 // Save the URL of our database as well as the name of our collection
-var databaseUrl = "mydb";
-var collections = ["myCollection"];
+// var databaseUrl = "mydb";
+// var collections = ["myCollection"];
 
-var databaseUrl2 = "testMenu";
-var collections2 = ["allTests"];
+// var databaseUrl2 = "testMenu";
+// var collections2 = ["allTests"];
 
 // Use mongojs to hook the database to the db variable
 // var db = mongojs(databaseUrl, collections);
