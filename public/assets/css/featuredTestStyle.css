@@ -95,7 +95,7 @@ padding-bottom: 15px;
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 36%;
 }
 
 /* The company logo */
@@ -149,6 +149,7 @@ padding-bottom: 15px;
 	line-height: 42px;
 	margin: 10px 15px;
 	vertical-align: middle;
+	
 }
 
 .footer-distributed .footer-center i.fa-envelope{
@@ -263,7 +264,6 @@ padding-bottom: 15px;
 }
 
 
-
 #coverShot{
 	background: url('../images/lab.jpg') no-repeat;	background-position: 40% 30%;
 	width: 100%;
@@ -341,7 +341,7 @@ text-align: center;
 color: grey;
 }
 
-p{
+p :not(.footer-center .footer-left .footer-right){
 /*font-family: 'Raleway', sans-serif;*/
 line-height: 35px;
 text-align: left;
@@ -497,10 +497,11 @@ h2:not(#department){
 h3:not(#subTitle){
 	font-size: 1.1rem !important;
 	    margin-bottom: 12px;
-	    background-color: white;
+
 	    padding: 5px;
 	    color: #002b5c;
-	   
+	       text-align: center;
+}
 }
 
 #dept {

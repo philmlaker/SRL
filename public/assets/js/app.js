@@ -2,7 +2,6 @@
     $(document).ready(function () {
 
 
-
       
         $('.dropdown-toggle').dropdown();
 
@@ -16,6 +15,9 @@
 
 
 $(document).on('click', '#test', function(){
+
+  window.scrollTo(811, 550);
+
   $('#results').empty();
   $('#results').show();
     $(".test").css("color", "rgb(0, 43, 92)");
@@ -154,6 +156,7 @@ $.ajax({
 
 $(document).on('click', '#testCollectionDetails', function(){
      $("#additionalInfo").toggle();
+         window.scrollTo(811, 1087);
  
 
 });
@@ -270,29 +273,33 @@ $.ajax({
 
       //  $("#results2").append("<h3 id='test' class='test'>" + data[i].TestName+"</h3>");
       // };
-      var arr = [];
+       var arr = [];
 
 
        for(var i = 0; i < data.length; i++){
-        console.log(data[i].TestName);
-        console.log(data[i].TestName)
+          arr.push({TestName: data[i].TestName, TestSet:data[i].TestSet });
+             // $("#results2").append("<h3 value=" + data[i].TestSet + " id='test' class='test'>" + data[i].TestName +"</h3>");
 
-
-
-
-          arr.push(data[i].TestName);
-         
-
-             $("#results2").append("<h3 value=" + data[i].TestSet + " id='test' class='test'>" + data[i].TestName +"</h3>");
-      };
-  
-       
-
-    
+       };
       
 
-    
+       console.log(arr);
 
+                    var arrSORT = arr.sort(function(a, b){
+                        if(a.TestName < b.TestName) return -1;
+                        if(a.TestName > b.TestName) return 1;
+                        return 0;
+                    });
+
+           console.log("LAL" + arrSORT);
+
+
+            for(var i = 0; i < arrSORT.length; i++){
+                   
+                    
+
+                         $("#results2").append("<h3 value=" + arrSORT[i].TestSet + " id='test' class='test'>" + arrSORT[i].TestName +"</h3>");
+                  };
 
     }
   });
@@ -304,6 +311,8 @@ $('#results').hide();
 
 $(document).on('click', '#brca', function(){
   console.log("clicked!");
+
+
       $("#results").toggle();
   
       var testValue = $(this).attr("value");

@@ -61,7 +61,8 @@ margin-left:12%;
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 36%;
+	    text-align: center;
 }
 
 /* The company logo */

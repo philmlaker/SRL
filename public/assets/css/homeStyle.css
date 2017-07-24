@@ -52,6 +52,12 @@ ul.navbar-nav.mr-auto{
 	background-position: 62% 73%;
 	width: 100%;
 }
+
+#coverShot2{
+	background: url('../images/srlCoat.jpg') no-repeat;
+	background-position: 93% 82%;
+	width: 100%;
+}
 #about{
 	float: none;
 }
@@ -124,7 +130,8 @@ justify-content: center;
 }
 
 h2{
-	
+	    margin-top: 13px;
+
 font-family: 'Droid Serif', serif;
 text-align: center;
 color: grey;
@@ -241,11 +248,13 @@ h2{
 
 
 
-#contact{
-	font-size: 15px;
+#contact2{
+	font-size: 16px;
 	text-align: center;
 	margin-top: 25px;
 	margin-bottom: 25px;
+	color: black;
+	text-align: center !important;
 }
 
 form-group{
@@ -304,7 +313,7 @@ padding-bottom: 15px;
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 36%;
 }
 
 /* The company logo */
@@ -358,6 +367,7 @@ padding-bottom: 15px;
 	line-height: 42px;
 	margin: 10px 15px;
 	vertical-align: middle;
+	
 }
 
 .footer-distributed .footer-center i.fa-envelope{
@@ -502,6 +512,7 @@ h2#labs{
 
 h5{
 	text-align: center;
+	color: #004b8d;
 }
 
 h3{

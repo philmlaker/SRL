@@ -60,7 +60,8 @@ ul.navbar-nav.mr-auto{
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 36%;
+	    text-align: center;
 }
 
 /* The company logo */
@@ -101,6 +102,7 @@ ul.navbar-nav.mr-auto{
 
 .footer-distributed .footer-center{
 	width: 35%;
+	font-family: 'Varela Round', sans-serif;
 }
 
 .footer-distributed .footer-center i{
@@ -145,6 +147,7 @@ ul.navbar-nav.mr-auto{
 
 .footer-distributed .footer-right{
 	width: 20%;
+	font-family: 'Varela Round', sans-serif;
 }
 
 .footer-distributed .footer-company-about{
@@ -153,6 +156,7 @@ ul.navbar-nav.mr-auto{
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
+	font-family: 'Varela Round', sans-serif;
 }
 
 .footer-distributed .footer-company-about span{
@@ -378,7 +382,7 @@ h1:not(#title){
     padding: 0px 0px;
 
 }.img-thumbnail{
-	max-width: 225px;
+	max-width: 260px;
 	
     margin-left: auto;
     margin-right: auto;
@@ -434,11 +438,14 @@ h2{
 .vcenter {
     display: flex;
     align-items: center;
+        margin-bottom: 17px;
 }
 
 h4{
 	text-align: center;
 	color: #616161;
+	font-size: 1.0rem;
+
 }
 h5{
 	text-align: center;
@@ -448,9 +455,10 @@ img{
 	max-width: 400px;
 }
 
-h4{
-	font-size: 1.0rem;
-}
+
+
+
+
 
 h5{
 	font-size: 1.0rem;

@@ -72,23 +72,26 @@ padding-bottom: 15px;
 
 
 #coverShot{
-	background: url('../images/AdobeStock_143712560_Preview.jpeg') no-repeat;
-	background-position: 79% 54%;
+	background: url('../images/AdobeStock_49597598.jpeg') no-repeat;
+	background-position: 27% 13%;
 	width: 100%;
 }
 
 .btn {
-	background-color: rgb(0, 43, 92);
+	background-color: #004b8d;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
-	border-color: #6a83b5;
+	border-radius: 60px;
+    float: right;
 }
 
 .btn:hover {
-	background-color: #6a83b5;
+	background-color: #e31937;
 	border-color: white;
+	color: white;
 
 }
+
 #credit {
 	font-size: 10px;
 }
@@ -133,10 +136,11 @@ justify-content: center;
 }
 
 #title{
-	font-size: 85px;
-	letter-spacing: 2px;
-	font-family: 'Droid Serif', serif;
-	    text-shadow: 1px 1px 0px grey;
+    color: white;
+    font-size: 85px;
+    letter-spacing: 2px;
+    font-family: 'Droid Serif', serif;
+    text-shadow: 1px 1px 0px #010204;
 }
 
 h2{
@@ -146,7 +150,7 @@ text-align: center;
 color: grey;
 }
 
-p{
+p :not(.footer-center .footer-left .footer-right){
 /*font-family: 'Raleway', sans-serif;*/
 line-height: 35px;
 text-align: left;
@@ -202,6 +206,16 @@ h1:not(#title){
  
 
 }
+
+
+p{
+
+line-height: 25px;
+color:#464646;
+
+    text-align: justify;
+
+}
 .footer-distributed{
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.33) 0%,#004b8d 100%);
 		background-color: #004b8d;
@@ -220,12 +234,14 @@ h1:not(#title){
 .footer-distributed .footer-right{
 	display: inline-block;
 	vertical-align: top;
+	font-family: 'Varela Round', sans-serif;
 }
 
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 36%;
+	    text-align: center;
 }
 
 /* The company logo */
@@ -279,6 +295,7 @@ h1:not(#title){
 	line-height: 42px;
 	margin: 10px 15px;
 	vertical-align: middle;
+	
 }
 
 .footer-distributed .footer-center i.fa-envelope{
@@ -298,6 +315,7 @@ h1:not(#title){
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
+	font-family: 'Varela Round', sans-serif;
 }
 
 .footer-distributed .footer-center p a{
@@ -318,6 +336,8 @@ h1:not(#title){
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
+	padding: 0;
+	font-family: 'Varela Round', sans-serif;
 }
 
 .footer-distributed .footer-company-about span{
@@ -326,6 +346,7 @@ h1:not(#title){
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
+	font-family: 'Varela Round', sans-serif;
 }
 
 .footer-distributed .footer-icons{
@@ -392,7 +413,6 @@ h1:not(#title){
 	}
 }
 
-
  div.row {
 /* 	    margin-top: 38px;
     margin-bottom: 38px;*/
@@ -429,9 +449,9 @@ margin-top: 15%;
 }
 
 h2:not(#department){
-	color: rgb(0, 43, 92);
+	color: rgb(0, 75, 141);
 	font-size: 38px;
-	background-color: #f7f7f9;
+	background-color: white;
 	padding-top: 0px;
 	    padding-left: 0px;
     text-align: left;
@@ -446,7 +466,7 @@ h2:not(#department){
 }
 
 #testContainer{
-	background-color: #e4e4e4;
+	
 	
 	padding: 0px 0px;
 	width: 150px;
@@ -454,29 +474,29 @@ h2:not(#department){
 	    margin-left: 12px;
 	    margin-right: 0px;
 /* IE10+ */ 
-background-image: -ms-linear-gradient(top, #EBEBEB 0%, #F7F7F7 47%, #EBEBEB 100%);
+background-image: -ms-linear-gradient(to bottom, rgba(204, 230, 245, 0.55) 0%, rgba(235, 242, 248, 0.72) 47%, #ffffff 100%);
 
 /* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(top, #EBEBEB 0%, #F7F7F7 47%, #EBEBEB 100%);
+background-image: -moz-linear-gradient(to bottom, rgba(204, 230, 245, 0.55) 0%, rgba(235, 242, 248, 0.72) 47%, #ffffff 100%);
 
 /* Opera */ 
-background-image: -o-linear-gradient(top, #EBEBEB 0%, #F7F7F7 47%, #EBEBEB 100%);
+background-image: -o-linear-gradient(to bottom, rgba(204, 230, 245, 0.55) 0%, rgba(235, 242, 248, 0.72) 47%, #ffffff 100%);
 
-/* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EBEBEB), color-stop(47, #F7F7F7), color-stop(100, #EBEBEB));
 
 /* Webkit (Chrome 11+) */ 
-background-image: -webkit-linear-gradient(top, #EBEBEB 0%, #F7F7F7 47%, #EBEBEB 100%);
+background-image: -webkit-linear-gradient(to bottom, rgba(204, 230, 245, 0.55) 0%, rgba(235, 242, 248, 0.72) 47%, #ffffff 100%);
 
 /* W3C Markup */ 
-background-image: linear-gradient(to bottom, #EBEBEB 0%, #F7F7F7 47%, #EBEBEB 100%);
+background-image: linear-gradient(to bottom, rgba(204, 230, 245, 0.55) 0%, rgba(235, 242, 248, 0.72) 47%, #ffffff 100%);
+
+background-image: linear-gradient(to bottom, rgba(204, 230, 245, 0.55) 0%, rgba(235, 242, 248, 0.72) 47%, #ffffff 100%);
 }
 
 #tests:not(#deptName){
 	
 	height: auto;
 
-
+    border-right: 2px solid #e4f1fa;
 	padding-left:20px;
 	padding-right:20px;
 	padding-top: 0px;
@@ -493,7 +513,7 @@ background-image: linear-gradient(to bottom, #EBEBEB 0%, #F7F7F7 47%, #EBEBEB 10
 #testDescriptContainer{
 	height: auto;
 	   
-	background-color: #f7f7f9;
+	background-color: white;
 
 	margin-right: -12px;
 
@@ -564,7 +584,7 @@ h3:not(#subTitle){
 h4{
 	font-size: 17px;
 	font-weight: bold;
-	color: red;
+	color: #004b8d;
 	margin-top: 13px;
 
 }
@@ -609,7 +629,8 @@ h5{
 
 #testCategoryHeader{
 	font-size: 29px;
-	color: #6a83b5;
+	color: #07559a;
+	padding-top: 6px;
 }
 
 #results{

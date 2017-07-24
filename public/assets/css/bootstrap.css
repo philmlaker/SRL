@@ -398,7 +398,7 @@ blockquote {
 }
 
 a {
-  color: white;
+  color: #086bbe;
   text-decoration: none;
 }
 
@@ -3140,6 +3140,7 @@ tbody.collapse.show {
 .dropup,
 .dropdown {
   position: relative;
+
 }
 
 .dropdown-toggle::after {
@@ -3192,6 +3193,7 @@ tbody.collapse.show {
 }
 
 .dropdown-item {
+      font-family: 'Varela Round', sans-serif;
   display: block;
   width: 100%;
   padding: 3px 1.5rem;

@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>SRL | BRCA</title>
+    <title>SRL | Locations</title>
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>   
@@ -26,7 +26,8 @@
 
     <link href="assets/css/homeStyle.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway|Quattrocento" rel="stylesheet">  
+      <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway|Quattrocento|Varela+Round" rel="stylesheet">  
+   
          <link rel="stylesheet" href="assets//font-awesome-4.7.0/css/font-awesome.min.css">
   </head>
 
@@ -147,11 +148,8 @@
                <h6> 6490 Hazeltine National Drive, Suite 170</h6>
                <h6> Orlando, FL 32822</h6>
                <h6> 866.236.5757</h6>
-                  <br>
-              <a href="javascript:void(0);" class="loc_link" data-lat="41.800498" data-long="-71.343993"> <h5> East Side Clinical Laboratory</h5></a>
-               <h6> 10 Risho Avenue</h6>
-               <h6> East Providence, RI 02914</h6>
-               <h6> 800.479.5227</h6>
+                  
+            
         </div>
          <div id="labs" class="col-md-6">
                     <a href="javascript:void(0);" class="loc_link" data-lat="30.344308" data-long="-97.670319"><h5> Sonic Reference Laboratory</h5></a>
@@ -163,11 +161,6 @@
                      <h6>  250 Miller Place</h6>
                      <h6>  Hicksville, NY 11801</h6>
                       <h6> 800.782.0282</h6>
-                        <br>
-                     <a href="javascript:void(0);" class="loc_link" data-lat="38.906552" data-long="-77.475730"><h5>  Sunrise Medical Laboratories, Chantilly</h5></a>
-                     <h6>  4200 Pleasant Valley Road</h6>
-                    <h6>   Chantilly, VA 20151</h6>
-                    <h6>   703.222.2313</h6>
                         <br>
                      <a href="javascript:void(0);" class="loc_link" data-lat="41.660051" data-long="-83.540332"><h5>  Pathology Laboratories</h5></a>
                     <h6>   1946 North 13th Street, Suite 301</h6>
@@ -184,12 +177,18 @@
                     <h6>   Santa Fe Springs, CA 90670</h6>
                     <h6>   Phone 877.537.5227</h6>
                      <h6>  Fax 562.906.6490</h6>
+<br>
+                       <a href="javascript:void(0);" class="loc_link" data-lat="41.800498" data-long="-71.343993"> <h5> East Side Clinical Laboratory</h5></a>
+               <h6> 10 Risho Avenue</h6>
+               <h6> East Providence, RI 02914</h6>
+               <h6> 800.479.5227</h6>
 
         </div>
       </div>
 
 <script type="text/javascript">
 $(document).ready(function () {
+
 
   function newLocation(newLat,newLng)
 {
@@ -204,7 +203,7 @@ $(document).ready(function () {
 
 $(".loc_link").click(function(){ 
 
-    
+    window.scrollTo(788, 338);
     
     var newLoc = [{
         lat: $(this).data('lat'),

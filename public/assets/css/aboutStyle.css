@@ -92,7 +92,8 @@ color: black;
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 36%;
+	    text-align: center;
 }
 
 /* The company logo */
@@ -166,6 +167,7 @@ color: black;
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
+	font-family: 'Varela Round', sans-serif;
 }
 
 .footer-distributed .footer-center p a{
@@ -491,9 +493,9 @@ color: #004b8d;
 }
 
 #profitList li{
-	background-image: url("/assets/images/microscope.svg");
+
 	background-repeat: no-repeat;
-margin: 0 0 50px 0;
+margin: 0 0 50px -100px;
 padding-left: 4.6em;
 height: 60px;
  font-family: 'Droid Serif', serif;
@@ -539,4 +541,15 @@ height: 30px;
 	font-size: 15px;
 
 	font-family: 'Droid Serif', serif !important;
+}
+
+#bullet{
+    max-width: 53px;
+    max-height: 53px;
+    margin-right: 14px;
+}
+
+.icons{
+	height: 250px;
+	text-align: center;
 }
