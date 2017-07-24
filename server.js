@@ -4,19 +4,28 @@
 
 // Dependencies
 var mongoose = require('mongoose');
-var mongoClient = require('mongodb').MongoClient;
 var express = require("express");
 var mongojs = require("mongojs");
 var logger = require("morgan");
 var bodyParser = require('body-parser');
 var app = express();
 app.use(bodyParser());
-var uri = 'mongodb://pmlaker:Megan2305@ds157702.mlab.com:57702/heroku_r45mjcns';
+var connect = require('connect'), 
+mongo = require('mongodb');
+
+var URI = 'mongodb://pmlaker:Megan2305@ds157702.mlab.com:57702/heroku_r45mjcns';
+
+mongo.connect(URI, {}, function(error, db){
+
+  // console.log will write to the heroku log which can be accessed via the 
+  // command line as "heroku logs"
+  db.addListener("error", function(error){
+    console.log("Error connecting to MongoLab");
+  });
 
 
 
-
-
+// Initialize Express
 
 
 // Set up a static folder (public) for our web app
@@ -112,10 +121,7 @@ app.get("/find/:id", function(req, res) {
   app.get("/find/dept/:id", function(req, res) {
   var test_id = req.param('id');
 
-  mongoClient.connect(uri, function (err, db){ 
-      if (err)
-        throw err;
-        db.myCollection.find({ $or: [ { "WebsiteCategory": test_id }, { "WebsiteCategory2": test_id } ] }, function(error, found) {
+  db.myCollection.find({ $or: [ { "WebsiteCategory": test_id }, { "WebsiteCategory2": test_id } ] }, function(error, found) {
     // Log any errors if the server encounters one
     if (error) {
       console.log(error);
@@ -126,13 +132,8 @@ app.get("/find/:id", function(req, res) {
       console.log("From server");
       console.log(found);
       
-    };
+    }
   });
-
-
-  })
-
-
   });
 
 
@@ -207,3 +208,5 @@ app.post("/submit", function(req, res) {
 app.listen(process.env.PORT || 3000);
 
 
+
+});
