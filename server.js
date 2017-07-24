@@ -31,9 +31,9 @@ var collections2 = ["allTests"];
 // var db2 = mongojs(databaseUrl2, collections2);
 
 // This makes sure that any errors are logged if mongodb runs into an issue
-db.on("error", function(error) {
-  console.log("Database Error:", error);
-});
+// db.on("error", function(error) {
+//   console.log("Database Error:", error);
+// });
 
 
 // Routes
