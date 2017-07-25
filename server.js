@@ -57,7 +57,7 @@ app.get("/find2/:id", function(req, res) {
 
 
 
-  db2.allTests.find({"TestName": {$regex:test_id2, $options: 'i'} }, function(error, found) {
+  db.collection("allTests").find({"TestName": {$regex:test_id2, $options: 'i'} }, function(error, found) {
     // Log any errors if the server encounters one
     if (error) {
       console.log(error);
