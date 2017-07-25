@@ -22,6 +22,8 @@ mongodb.MongoClient.connect(URI, function(err, db) {
 // Initialize Express
 
 var collection = db.collection('myCollection');
+var collection2 = db.collection('allTests');
+
 
 // Set up a static folder (public) for our web app
 app.use(express.static("public"));
@@ -70,10 +72,19 @@ app.get("/find2/:id", function(req, res) {
   });
   });
 
+
+
+
+
+
+
+
+
+
 app.get("/find/:id", function(req, res) {
   var test_id = req.params.id;
 
-  db2.allTests.find({"Test": test_id }, function(error, found) {
+ db.collection("allTests").find({"Test": test_id }, function(error, found) {
     // Log any errors if the server encounters one
     if (error) {
       console.log(error);
@@ -91,7 +102,7 @@ app.get("/find/:id", function(req, res) {
   app.get("/find/dept2/:id", function(req, res) {
     var test_id = req.params.id;
 
-  db.myCollection.find({"TestSet": test_id }, function(error, found) {
+ db.collection("myCollection").find({"TestSet": test_id }, function(error, found) {
     // Log any errors if the server encounters one
     if (error) {
       console.log(error);
