@@ -12,7 +12,7 @@ var app = express();
 app.use(bodyParser());
 var mongodb = require('mongodb');
 
-var URI = 'mongodb://pmlaker:pm2305@ds157702.mlab.com:57702/heroku_r45mjcns';
+var URI = 'mongodb://pmlaker:Pm2305@ds157702.mlab.com:57702/heroku_r45mjcns';
 // var URI = 'mongodb://bigmongo:d33znutz@ds155160.mlab.com:55160/whygoalone2';
 mongodb.MongoClient.connect(URI, function(err, db) {
   console.log("db connected");
