@@ -12,7 +12,7 @@ var app = express();
 app.use(bodyParser());
 var mongodb = require('mongodb');
 
-var URI = 'mongodb://pmlaker:Megan2305@ds157702.mlab.com:57702/heroku_r45mjcns';
+var URI = 'mongodb://pmlaker:pm2305@ds157702.mlab.com:57702/heroku_r45mjcns';
 // var URI = 'mongodb://bigmongo:d33znutz@ds155160.mlab.com:55160/whygoalone2';
 mongodb.MongoClient.connect(URI, function(err, db) {
   console.log("db connected");
@@ -31,6 +31,7 @@ app.use(express.static("public"));
 // var databaseUrl = "mydb";
 // var collections = ["myCollection"];
 
+
 // var databaseUrl2 = "testMenu";
 // var collections2 = ["allTests"];
 
@@ -42,26 +43,69 @@ app.use(express.static("public"));
 // db.on("error", function(error) {
 //   console.log("Database Error:", error);
 // });
+app.get("/", function(req, res) {
+  
+   res.sendfile('public/home.html');
+});
 
-  // app.get("/find/dept/:id", function(req, res) {
-  // var test_id = req.param('id');
-  // console.log()
+app.get("/find2/:id", function(req, res) {
+    var test_id2 = req.params.id;
 
-  // collection.find({ $or: [ { "WebsiteCategory": test_id }, { "WebsiteCategory2": test_id } ] }, function(error, found) {
-  //   // Log any errors if the server encounters one
-  //   console.log("Finding ID" + test_id);
-  //   if (error) {
-  //     console.log(error);
-  //   }
-  //   // Otherwise, send the result of this query to the browser
-  //   else {
-  //     res.json(found);
-  //     console.log("From server");
-  //     console.log(found);
+
+
+
+
+  db2.allTests.find({"TestName": {$regex:test_id2, $options: 'i'} }, function(error, found) {
+    // Log any errors if the server encounters one
+    if (error) {
+      console.log(error);
+    }
+    // Otherwise, send the result of this query to the browser
+    else {
+      res.json(found);
+      console.log("From server");
+      console.log(found);
       
-  //   }
-  // });
-  // });
+    }
+  });
+  });
+
+app.get("/find/:id", function(req, res) {
+  var test_id = req.params.id;
+
+  db2.allTests.find({"Test": test_id }, function(error, found) {
+    // Log any errors if the server encounters one
+    if (error) {
+      console.log(error);
+    }
+    // Otherwise, send the result of this query to the browser
+    else {
+      res.json(found);
+      console.log("From server");
+      console.log(found);
+      
+    }
+  });
+  });
+
+  app.get("/find/dept2/:id", function(req, res) {
+    var test_id = req.params.id;
+
+  db.myCollection.find({"TestSet": test_id }, function(error, found) {
+    // Log any errors if the server encounters one
+    if (error) {
+      console.log(error);
+    }
+    // Otherwise, send the result of this query to the browser
+    else {
+      res.json(found);
+      console.log("From server");
+      console.log(found);
+      
+    }
+  });
+  });
+
 //gage test:
 app.get("/find/dept/:id", function(req, res) {
   var test_id = req.param('id');
