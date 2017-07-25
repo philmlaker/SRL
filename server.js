@@ -10,7 +10,7 @@ var logger = require("morgan");
 var bodyParser = require('body-parser');
 var app = express();
 app.use(bodyParser());
-var mongo = require('mongodb');
+var mongodb = require('mongodb');
 
 var URI = 'mongodb://pmlaker:Megan2305@ds157702.mlab.com:57702/heroku_r45mjcns';
 
