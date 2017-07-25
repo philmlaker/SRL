@@ -76,46 +76,72 @@ app.get("/find2/:id", function(req, res) {
 
 
 
+  app.get("/find/:id", function(req, res) {
+    var test_id = req.params.id;
 
-
-
-
-
-app.get("/find/:id", function(req, res) {
-  var test_id = req.params.id;
-
- db.collection("allTests").find({"Test": test_id }, function(error, found) {
-    // Log any errors if the server encounters one
-    if (error) {
-      console.log(error);
+      db.collection("allTests").find({"Test": test_id }).toArray(function(err, docs) {
+    console.log(docs);
+    console.log("found docs")
+    if (err) {
+      handleError(res, err.message, "Failed to get contacts.");
+    } else {
+      res.status(200).json(docs);
     }
-    // Otherwise, send the result of this query to the browser
-    else {
-      res.json(found);
-      console.log("From server");
-      console.log(found);
+  });
+});
+
+
+
+
+// app.get("/find/:id", function(req, res) {
+//   var test_id = req.params.id;
+
+//  db.collection2("allTests").find({"Test": test_id }, function(error, found) {
+//     // Log any errors if the server encounters one
+//     if (error) {
+//       console.log(error);
+//     }
+//     // Otherwise, send the result of this query to the browser
+//     else {
+//       res.json(found);
+//       console.log("From server");
+//       console.log(found);
       
-    }
-  });
-  });
+//     }
+//   });
+//   });
 
   app.get("/find/dept2/:id", function(req, res) {
     var test_id = req.params.id;
 
- db.collection("myCollection").find({"TestSet": test_id }, function(error, found) {
-    // Log any errors if the server encounters one
-    if (error) {
-      console.log(error);
+      db.collection("allTests").find({"Test": test_id }).toArray(function(err, docs) {
+    console.log(docs);
+    console.log("found docs")
+    if (err) {
+      handleError(res, err.message, "Failed to get contacts.");
+    } else {
+      res.status(200).json(docs);
     }
-    // Otherwise, send the result of this query to the browser
-    else {
-      res.json(found);
-      console.log("From server");
-      console.log(found);
+  });
+});
+
+
+
+
+ // db.collection("myCollection").find({"TestSet": test_id }, function(error, found) {
+ //    // Log any errors if the server encounters one
+ //    if (error) {
+ //      console.log(error);
+ //    }
+ //    // Otherwise, send the result of this query to the browser
+ //    else {
+ //      res.json(found);
+ //      console.log("From server");
+ //      console.log(found);
       
-    }
-  });
-  });
+ //    }
+ //  });
+ //  });
 
 //gage test:
 app.get("/find/dept/:id", function(req, res) {
