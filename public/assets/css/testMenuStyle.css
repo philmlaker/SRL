@@ -99,14 +99,13 @@ padding-bottom: 15px;
 	font-family: 'Droid Serif', serif;
 }
 
-.navbar{
-	
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+27,f1f1f1+62,e1e1e1+80,e1e1e1+86,f6f6f6+97 */
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 27%, rgba(241,241,241,1) 62%, rgba(225,225,225,1) 80%, rgba(225,225,225,1) 86%, rgba(246,246,246,1) 97%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 27%,rgba(241,241,241,1) 62%,rgba(225,225,225,1) 80%,rgba(225,225,225,1) 86%,rgba(246,246,246,1) 97%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 27%,rgba(241,241,241,1) 62%,rgba(225,225,225,1) 80%,rgba(225,225,225,1) 86%,rgba(246,246,246,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+ .navbar{
+border-bottom: 2px solid #e4f2fa;
+ 	    
+ 	    width: 100%;
+ 	    margin: 0 0;
+ }
+
 
 }
 #subTitle{
@@ -413,9 +412,9 @@ color:#464646;
 	}
 }
 
- div.row {
-/* 	    margin-top: 38px;
-    margin-bottom: 38px;*/
+   div.row {
+ 	    width: 100%;
+ 	    margin: 0 0;
  }
 
  h2{
@@ -696,8 +695,10 @@ h5{
 }
 
 #searchRow{
-	margin-bottom: 35px;
+	margin-bottom: 15px;
 	margin-top: 15px;
+	background-color: #eef5fa;
+	padding-bottom: 41px;
 }
 
 #testNameSearch{

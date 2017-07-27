@@ -267,14 +267,13 @@ body {
 	font-family: 'Droid Serif', serif;
 }
 
-.navbar{
-	
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+27,f1f1f1+62,e1e1e1+80,e1e1e1+86,f6f6f6+97 */
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 27%, rgba(241,241,241,1) 62%, rgba(225,225,225,1) 80%, rgba(225,225,225,1) 86%, rgba(246,246,246,1) 97%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 27%,rgba(241,241,241,1) 62%,rgba(225,225,225,1) 80%,rgba(225,225,225,1) 86%,rgba(246,246,246,1) 97%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 27%,rgba(241,241,241,1) 62%,rgba(225,225,225,1) 80%,rgba(225,225,225,1) 86%,rgba(246,246,246,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+ .navbar{
+border-bottom: 2px solid #e4f2fa;
+ 	    
+ 	    width: 100%;
+ 	    margin: 0 0;
+ }
+
 
 }
 #subTitle{
@@ -364,9 +363,9 @@ h1:not(#title){
  
  }
 
- div.row {
-/* 	    margin-top: 38px;
-    margin-bottom: 38px;*/
+   div.row {
+ 	    width: 100%;
+ 	    margin: 0 0;
  }
 
  h2{
@@ -428,6 +427,7 @@ td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+
 }
 
 tr:nth-child(even) {
@@ -463,3 +463,100 @@ padding-bottom: 15px;
 }
 
 
+
+h2 {
+  font-size:1em; 
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 2em;
+  color: #FB667A;
+}
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FB667A;
+  text-decoration: none;
+}
+
+.blue { color: #185875; }
+.yellow { color: #FFF842; }
+
+.container th h1 {
+	  font-weight: bold;
+	  font-size: 1em;
+  text-align: center;
+  color: #185875;
+}
+
+.container td {
+	  font-weight: normal;
+	  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+	        box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.container {
+	  text-align: center;
+	  overflow: hidden;
+	  width: 80%;
+	  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.container td, .container th {
+	  padding-bottom: 2%;
+	  padding-top: 2%;
+  padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+	  background-color: white;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+	  background-color: #efefef;
+}
+
+.container th {
+	      background: linear-gradient(to top, rgba(0, 0, 0, 0.33) 0%,#004b8d 100%);
+    background-color: #004b8d;
+}
+
+.container td:first-child { color: black; }
+
+.container tr:hover {
+   background-color: #e31937;
+   color: white;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+	   -moz-box-shadow: 0 6px 6px -6px #0E1119;
+	        box-shadow: 0 6px 6px -6px #0E1119;
+
+}
+
+.container td:hover {
+	 
+   
+  background-color: #e31937;
+  color: white;
+  font-weight: bold;
+  
+  box-shadow: #650715 -1px 1px, #650715 -2px 2px, #650715 -3px 3px, #650715 -4px 4px, #650715 -5px 5px, #650715 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  
+  transition-delay: 0s;
+	  transition-duration: 0.4s;
+	  transition-property: all;
+  transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+.container td:nth-child(4),
+.container th:nth-child(4) { display: none; }
+}
