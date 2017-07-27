@@ -494,7 +494,7 @@ color: #004b8d;
 #profitList li{
 
 	background-repeat: no-repeat;
-margin: 0 0 50px -100px;
+margin: 0 0 50px -120px;
 padding-left: 4.6em;
 height: 60px;
  font-family: 'Droid Serif', serif;
@@ -523,7 +523,7 @@ color: #004b8d;
 }
 
 #leverList li{
-	background-image: url("/assets/images/atom.svg");
+	background-image: url("/assets/images/beakerAbout.svg");
 	background-repeat: no-repeat;
 margin: 0 0 50px 0;
 padding-left: 4.6em;
@@ -575,7 +575,7 @@ padding-bottom: 30px;
 }
 
 #aboutUsimage{
-	height: 400px;
+	width: 520px;
 	    
 
 }
