@@ -17,6 +17,8 @@ body {
 ul.navbar-nav.mr-auto{
 	    margin-left: auto;
 	    font-size: 17px;
+	    font-family: 'Segoe UI', sans-serif;
+	    font-weight: bold;
 }
 
 /*#offCenter{
@@ -299,19 +301,22 @@ p{
 
 }
 
-.nav-bar{
-	font-family: 'Droid Serif', serif;
-}
 
  .navbar{
 border-bottom: 2px solid #e4f2fa;
- 	    
+ 	
  	    width: 100%;
  	    margin: 0 0;
  }
 
 
 }
+
+nav.navbar {
+
+	  
+}
+
 #subTitle{
 		color: #002b5c;
 	letter-spacing: 1px;
@@ -590,7 +595,7 @@ display: flex;
 }
 
 ul{
-	    font-family: 'Varela Round', sans-serif !important;
+	   
 
     color: #383838;
     text-align: justify;
@@ -604,6 +609,7 @@ ul{
 li#bullet2{
 	 margin-bottom: 23px;
 	 line-height: 17px
+	  font-family: 'Varela Round', sans-serif !important;
 }
 
 .leftimg{
