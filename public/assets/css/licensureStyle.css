@@ -402,7 +402,7 @@ margin-left:12%;
 }
 #logo{
 	height: 55px;
-	margin-right: 55px;
+	
 
 }
 }
@@ -545,7 +545,7 @@ h2 a {
    
   background-color: #e31937;
   color: white;
-  font-weight: bold;
+/*  font-weight: bold;
   
   box-shadow: #650715 -1px 1px, #650715 -2px 2px, #650715 -3px 3px, #650715 -4px 4px, #650715 -5px 5px, #650715 -6px 6px;
   transform: translate3d(6px, -6px, 0);
@@ -553,7 +553,7 @@ h2 a {
   transition-delay: 0s;
 	  transition-duration: 0.4s;
 	  transition-property: all;
-  transition-timing-function: line;
+  transition-timing-function: line;*/
 }
 
 @media (max-width: 800px) {

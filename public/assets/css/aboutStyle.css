@@ -65,7 +65,7 @@ padding-bottom: 15px;
 p{
     font-family: 'Varela Round', sans-serif !important;
     line-height: 37px;
-    color: #383838;
+    color: #737373;
     text-align: justify;
     font-size: 17px;
 
@@ -597,7 +597,7 @@ display: flex;
 ul{
 	   
 
-    color: #383838;
+    color: #737373;
     text-align: justify;
     font-size: 17px;
 
@@ -607,6 +607,7 @@ ul{
 }
 
 li#bullet2{
+	color: #828282;
 	 margin-bottom: 23px;
 	 line-height: 17px
 	  font-family: 'Varela Round', sans-serif !important;
@@ -619,3 +620,18 @@ li#bullet2{
 .rightimg{
 	margin-left: 53px;
 }
+
+#leverList:first-child {
+	margin-top: 27px;
+}
+
+#hospitalContainer{
+    background-color: rgba(255, 255, 255, 0.43);
+    border-radius: 78px;
+};
+
+#devtext2 {
+    background-color: white;
+    border-radius: 47px;
+    padding: 38px 39px;
+};
