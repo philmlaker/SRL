@@ -338,20 +338,27 @@ nav.navbar {
 }
 
 #mainHeader{
+	min-height: 100vh;
 	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100%; /* These two lines are counted as one :-)       */
   display: flex;
 justify-content: center;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 	
 }
 
 #title{
-	font-size: 85px;
-	letter-spacing: 2px;
-	font-family: 'Droid Serif', serif;
-	    text-shadow: 1px 1px 0px grey;
+    color: white;
+    font-size: 85px;
+    letter-spacing: 2px;
+    font-family: 'Droid Serif', serif;
+    text-shadow: 1px 1px 0px #010204;
+    text-align: center;
+    flex-grow: 1;
+  align-items: center;
+      margin-top: 14%;
 }
 
 h2{

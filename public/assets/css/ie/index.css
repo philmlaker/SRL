@@ -5,11 +5,11 @@ font-family: 'Open Sans', sans-serif;*/
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 4rem;
-  background-color: rgba(197, 197, 197, 0.26);
+  background-color: black;
 }
 
 #logo{
-	height: 55px;
+	height: 2555px;
 	
 
 }
@@ -17,7 +17,6 @@ body {
 ul.navbar-nav.mr-auto{
 	    margin-left: auto;
 	        font-size: 17px;
-
 }
 
 /*#offCenter{
@@ -54,12 +53,6 @@ ul.navbar-nav.mr-auto{
 	width: 100%;
 }
 
-#coverShot3{
-	background: url('../images/srlCoat.jpg') no-repeat;
-	background-position: 93% 82%;
-	width: 100%;
-}
-
 #coverShot2{
 	background: url('../images/srlCoat.jpg') no-repeat;
 	background-position: 93% 82%;
@@ -85,7 +78,6 @@ ul.navbar-nav.mr-auto{
 
 .nav-bar{
 	font-family: 'Droid Serif', serif;
-
 }
 
  .navbar{
@@ -93,17 +85,27 @@ border-bottom: 2px solid #e4f2fa;
  	    
  	    width: 100%;
  	    margin: 0 0;
- 	     list-style-type: none;
  }
 
 
 }
 
+#subTitle{
+		color: #6d2a55;
+	letter-spacing: 1px;
+	font-family: 'Raleway', sans-serif;
 
+	    margin: 0 101px;
+	        font-size: 23px;
+	         margin: 0px 139px;
+	line-height: 40px;
+	margin-bottom: 0px;
+
+}
 
 @media screen and (max-width: 900px){
 #subTitle{
-	font-size: 17px !important;p
+	font-size: 17px !important;
 }
 #title{
 	font-size: 50px !important;
@@ -124,6 +126,7 @@ justify-content: center;
 }
 
 #title{
+	color: #000000;
 	font-size: 85px;
 	letter-spacing: 2px;
 	font-family: 'Droid Serif', serif;
@@ -208,7 +211,9 @@ p{
 /*height: 50%;
 margin-bottom: 5px;*/
 }
-
+#subTitle{
+		   
+}
 .thumbnail{   
 margin-top: 15%;     
     width: 100%; 
@@ -525,25 +530,4 @@ h3{
 		
 
 
-}
-h3#subTitle{
-	width: 80%; 
-		color: #002b5c;
-	letter-spacing: 1px;
-	font-family: 'Raleway', sans-serif;
-	 font-size: 23px;
-	 margin: 0px 139px;
-	line-height: 40px;
-}
-
-#title2{
-    color: white !important;
-    font-size: 85px;
-    letter-spacing: 2px;
-    font-family: 'Droid Serif', serif;
-    text-shadow: 1px 1px 0px #010204;
-    text-align: center;
-    flex-grow: 1;
-  align-items: center;
-      margin-top: 14%;
 }

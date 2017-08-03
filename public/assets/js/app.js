@@ -168,15 +168,16 @@ $(document).keypress(function(e){
                console.log("working");
      var searchText = $("#txtSearch").val();
      console.log(searchText);
-      $("#searchText").val("");
-
+      
+      $(".category").css("color", "#002b5c");
+    
 $.ajax({
     type: "GET",
     url: "/find2/" + searchText,
     success: function(data) {
       console.log("FROM app" + data);
       $("#results2").empty();
-
+  $("#results2").append("<h5 id='testCategoryHeader'>Search Results<hr></h5>");
         for(var i = 0; i < data.length; i++){
         
 
@@ -191,11 +192,12 @@ $("#results2").append("<h3 value=" + data[i].Test + " id='test' class='test'>" +
 
 
 }
+
 });
 
 
 
-
+$("#txtSearch").val('');
 
         }
     });
@@ -208,7 +210,6 @@ $(document).on('click', '#submit', function(){
      console.log(searchText);
       $("#searchText").val("");
       $(".category").css("color", "#002b5c");
-        $(".category").css("background-color", "#e4e4e4");
                 $("#results2").empty();
         $("#results").empty();
 
@@ -219,7 +220,8 @@ $.ajax({
       console.log("FROM app" + data);
       $("#results2").empty();
 
-
+        console.log(data);
+        $("#results2").append("<h5 id='testCategoryHeader'>Search Results<hr></h5>");
         for(var i = 0; i < data.length; i++){
         
 
@@ -236,7 +238,7 @@ $.ajax({
 
 }
 });
-
+$("#txtSearch").val('');
 });
 
 
@@ -248,10 +250,7 @@ $.ajax({
 
 $(document).on('click', '#dept', function(){
        $(".category").css("color", "#002b5c");
-        $(".category").css("background-color", "rgba(228, 228, 228, 0)");
-
-     $(this).css("background-color", "#002b5c");
-      $(this).css("color", "white");
+      $(this).css("color", "#e31937");
 
   console.log($(this).html());
   deptValue = $(this).html();
