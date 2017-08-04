@@ -66,7 +66,7 @@ $.ajax({
       var frequency = data[0].Frequency;
       var ref = data[0].ReferenceRange;
       var ref = data[0].ReferenceRange;
-      var NYSDOH = data[0].NYSDOHApprovalStatus;
+      var NYSDOH = data[0].NYSDOHApprovalStatus || 0;
       var CPT = data[0].CPT;
       var method = data[0].Methodology;
       var compliance = data[0].COMPLIANCESTATEMENT || 0;
@@ -94,7 +94,7 @@ $.ajax({
                  "<p><img id='glass' src='assets/images/testCode.svg'>Test Code: " + testCode + "</p><br>" +
                  "<p><img id='timer' src='assets/images/timer.svg'> Expected Turn Around: " + tat + "</p><br>" +
                  "<p><img id='matrix' src='assets/images/matrix.svg'> " + matrix + "</p><br>" +
-                 "<H6>Expected turn around is an estimate, consult full test destails by clicking on the button below for more information.</h6><br>" +
+                 "<H6>Click on the button below for full test details.</h6><br>" +
               "</div>" + 
                 "<div class='text-right'><button class='btn btn-secondary' id='testCollectionDetails'>Test Collection Details</button></div>" + 
                 "<div id='additionalInfo'>" + 
@@ -121,19 +121,32 @@ $.ajax({
                   "<h5>Expected Turn Around Time:</h5> " + tat + "<br>" +
                   "<h5>Reference Range:</h5> " + ref + "<br>" +
                   "<h5>Responsible Deptartment:</h5> " + dept + "<br>" +
-                  "<h5>NYSDOH Approval Status:</h5> " + NYSDOH + "<br>" +
+                  "<div id='NYSDOHDiv'></div>" +
                   "<h5>CPT:</h5> " + CPT + "<br>" +
                   "<h5>Methodology:</h5> " + method + "<br>" +
                   "<div id='complianceDiv'></div>");
 
 
             if(compliance == 0){
+                console.log("NYSDOH = undefined");
+
+              }else{
+                console.log("NYSDOH = defined");
+                 $("#complianceDiv").html(
+                  "<h5>Compliance Statement:</h5> " + compliance + "<br>" +
+                   "</div>" +
+                   "</div>"
+                   );
+              };
+
+
+                if(NYSDOH == 0){
                 console.log("compliance = undefined");
 
               }else{
                 console.log("compliance = defined");
-                 $("#complianceDiv").html(
-                  "<h5>Compliance Statement:</h5> " + compliance + "<br>" +
+                 $("#NYSDOHDiv").html(
+                  "<h5>NYSDOH Approval Status:</h5> " + NYSDOH + "<br>" +
                    "</div>" +
                    "</div>"
                    );
@@ -351,10 +364,10 @@ $.ajax({
       var frequency = data[0].Frequency;
       var ref = data[0].ReferenceRange;
       var ref = data[0].ReferenceRange;
-      var NYSDOH = data[0].NYSDOH;
+      var NYSDOH = data[0].NYSDOH || 0;
       var CPT = data[0].CPT;
       var method = data[0].Methodology;
-      var compliance = data[0].COMPLIANCESTATEMENT || 0;;
+      var compliance = data[0].COMPLIANCESTATEMENT || 0;
 
 
       $("#results").empty();
@@ -364,7 +377,7 @@ $.ajax({
                  "<p><img id='glass' src='assets/images/testCode.svg'>Test Code: " + testCode + "</p><br>" +
                  "<p><img id='timer' src='assets/images/timer.svg'> Expected Turn Around: " + tat + "</p><br>" +
                  "<p><img id='matrix' src='assets/images/matrix.svg'> " + matrix + "</p><br>" +
-                 "<H6>Expected turn around is an estimate, consult full test destails by clicking on the button below for more information.</h6><br>" +
+                 "<H6>Click on the button below for full test details.</h6><br>" +
               "</div>" + 
                 "<div class='text-right'><button class='btn btn-secondary' id='testCollectionDetails'>Test Collection Details</button></div>" + 
                 "<div id='additionalInfo'>" + 
@@ -391,7 +404,7 @@ $.ajax({
                   "<h5>Expected Turn Around Time:</h5> " + tat + "<br>" +
                   "<h5>Reference Range:</h5> " + ref + "<br>" +
                   "<h5>Responsible Deptartment:</h5> " + dept + "<br>" +
-                  "<h5>NYSDOH Approval Status:</h5> " + NYSDOH + "<br>" +
+                  "<div id='NYSDOHDiv'></div>" +
                   "<h5>CPT:</h5> " + CPT + "<br>" +
                   "<h5>Methodology:</h5> " + method + "<br>" +
                     "<div id='complianceDiv'></div>");
@@ -409,6 +422,21 @@ $.ajax({
                    "</div>"
                    );
               };
+
+                if(NYSDOH == 0){
+                console.log("NYSDOH = undefined");
+                 $("#NYSDOHDiv").remove();
+
+              }else{
+                console.log("NYSDOH = defined");
+                 $("#NYSDOHDiv").html(
+                  "<h5>NYSDOH Approval Status:</h5> " + NYSDOH + "<br>" +
+                   "</div>" +
+                   "</div>"
+                   );
+              };
+
+
 
     }
   });
@@ -463,10 +491,10 @@ $.ajax({
       var frequency = data[0].Frequency;
       var ref = data[0].ReferenceRange;
       var ref = data[0].ReferenceRange;
-      var NYSDOH = data[0].NYSDOH;
+      var NYSDOH = data[0].NYSDOH || 0;
       var CPT = data[0].CPT;
       var method = data[0].Methodology;
-      var compliance = data[0].COMPLIANCESTATEMENT || 0;;
+      var compliance = data[0].COMPLIANCESTATEMENT || 0;
 
 
       $("#results").empty();
@@ -476,7 +504,7 @@ $.ajax({
                  "<p><img id='glass' src='assets/images/testCode.svg'>Test Code: " + testCode + "</p><br>" +
                  "<p><img id='timer' src='assets/images/timer.svg'> Expected Turn Around: " + tat + "</p><br>" +
                  "<p><img id='matrix' src='assets/images/matrix.svg'> " + matrix + "</p><br>" +
-                 "<H6>Expected turn around is an estimate, consult full test destails by clicking on the button below for more information.</h6><br>" +
+                 "<H6>Click on the button below for full test details.</h6><br>" +
               "</div>" + 
                 "<div class='text-right'><button class='btn btn-secondary' id='testCollectionDetails'>Test Collection Details</button></div>" + 
                 "<div id='additionalInfo'>" + 
@@ -503,7 +531,7 @@ $.ajax({
                   "<h5>Expected Turn Around Time:</h5> " + tat + "<br>" +
                   "<h5>Reference Range:</h5> " + ref + "<br>" +
                   "<h5>Responsible Deptartment:</h5> " + dept + "<br>" +
-                  "<h5>NYSDOH Approval Status:</h5> " + NYSDOH + "<br>" +
+                 "<div id='NYSDOHDiv'></div>" +
                   "<h5>CPT:</h5> " + CPT + "<br>" +
                   "<h5>Methodology:</h5> " + method + "<br>" +
                     "<div id='complianceDiv'></div>");
@@ -513,10 +541,24 @@ $.ajax({
             if(compliance == 0){
                 console.log("compliance = undefined");
 
+
               }else{
                 console.log("compliance = defined");
                  $("#complianceDiv").html(
                   "<h5>Compliance Statement:</h5> " + compliance + "<br>" +
+                   "</div>" +
+                   "</div>"
+                   );
+              };
+
+              if(NYSDOH == 0){
+                console.log("NYSDOH = undefined");
+                $("#NYSDOHDiv").remove();
+
+              }else{
+                console.log("NYSDOH = defined");
+                 $("#NYSDOHDiv").html(
+                  "<h5>NYSDOH Approval Status:</h5> " + NYSDOH + "<br>" +
                    "</div>" +
                    "</div>"
                    );

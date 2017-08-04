@@ -733,3 +733,10 @@ padding-bottom: 15px;
 	background-color: #004b8d;
 	color: white;
 }
+
+
+#collectionManual{
+	color: darkgrey;
+	text-align: center;
+	margin-top: 15px;
+}
