@@ -1,2 +1,0 @@
- mongoimport -h ds157702.mlab.com:57702 -d heroku_r45mjcns -c allTests -u pmlaker -p Megan2305 --file D:/SRL/collectionmanual.csv --type csv --headerline
-
