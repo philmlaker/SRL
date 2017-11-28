@@ -65,9 +65,9 @@ padding-bottom: 15px;
 p{
     font-family: 'Varela Round', sans-serif !important;
     line-height: 37px;
-    color: #737373;
+    color: #333333;
     text-align: justify;
-    font-size: 17px;
+    font-size: 19px;
 
 }
 .footer-distributed{
@@ -474,6 +474,8 @@ h2{
 
 ul{
 	line-height: 30px;
+	font-size: 21px !important;
+	
 }
 
 #profit{
@@ -614,7 +616,7 @@ ul{
 }
 
 li#bullet2{
-	color: #828282;
+	color: #333333;
 	 margin-bottom: 23px;
 	 line-height: 17px
 	  font-family: 'Varela Round', sans-serif !important;

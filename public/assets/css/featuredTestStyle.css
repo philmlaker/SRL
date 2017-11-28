@@ -697,3 +697,13 @@ padding-bottom: 15px;
 #pdf{
 	    width: 100%;
 }
+
+.tox{
+	    width: 500px;
+    text-align: center !important;
+
+}
+
+.toxcontain{
+	text-align: center;
+}
