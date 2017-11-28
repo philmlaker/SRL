@@ -379,8 +379,8 @@ h1:not(#title){
 }
 p{
 
-/*height: 50%;
-margin-bottom: 5px;*/
+text-align: justify;
+font-size: 19px;
 }
 #subTitle{
 
