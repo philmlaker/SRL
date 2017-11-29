@@ -16,7 +16,7 @@ body {
 
 ul.navbar-nav.mr-auto{
 	    margin-left: auto;
-	    font-size: 17px;
+	    font-size: 17px !important;
 	    font-family: 'Segoe UI', sans-serif;
 	    font-weight: bold;
 }
@@ -606,7 +606,7 @@ display: flex;
 ul{
 	   
 
-    color: #737373;
+    color: #004b8d;
     text-align: justify;
     font-size: 17px;
 
