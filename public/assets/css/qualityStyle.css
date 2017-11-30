@@ -245,8 +245,8 @@ margin-left:12%;
 
 }
 #coverShot{
-	background: url('../images/lab.jpg') no-repeat;	
-	background-position: 99% 34%;
+	background: url('../images/iStock-153664932.jpg') no-repeat;	
+	background-position: 49% 93%;
 	width: 100%;
 }
 .btn {
@@ -308,7 +308,7 @@ justify-content: center;
     font-size: 85px;
     letter-spacing: 2px;
     font-family: 'Droid Serif', serif;
-    text-shadow: 1px 1px 0px #010204;
+    text-shadow: 1px 1px 2px #010204;
     text-align: center;
     flex-grow: 1;
   align-items: center;

@@ -143,8 +143,7 @@ font-family: 'Varela Round', sans-serif;
 line-height: 25px;
 color: #737373;
 
-    text-align: justify;
-
+text-align: left;
 }
 
 h1:not(#title){
