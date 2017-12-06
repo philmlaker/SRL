@@ -160,7 +160,6 @@ h1:not(#title){
 
 
 
-
  #srlLogo{
  	height: 25px;
  	display: inline-block;
@@ -168,27 +167,6 @@ h1:not(#title){
  	margin-top: 5px;
  }
 
-@media screen and (min-width: 1000px){
- .fixed-top {
-     
-}
-.thumbnail img{
-    // your styles for the image
-    
-    height: 100%;
-    display: block;
-    padding: 0px 0px;
-
-}.img-thumbnail{
-	max-width: 300px;
-	
-    margin-left: auto;
-    margin-right: auto;
-     top: -9px;
-    position: relative;
-}
-
- }
 
  div.row {
  	    width: 100%;
@@ -457,22 +435,6 @@ padding-bottom: 15px;
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 600px) {
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
-		text-align: center;
-	}
-
-	.footer-distributed .footer-right{
-		float: none;
-		margin: 0 auto 20px;
-	}
-
-	.footer-distributed .footer-left p.footer-links{
-		line-height: 1.8;
-	}
-}
 
 
 
@@ -503,9 +465,9 @@ h2#labs{
 	font-size: 10px;
 }
 
-#articleClaude{
-	max-width: 500px;
-}
+// #articleClaude{
+// 	max-width: 500px;
+// }
 
 h5{
 	text-align: center;
@@ -556,9 +518,6 @@ h3#subTitle{
 
 
    
-h3#subTitle {
-	display: none !important;
-}
 
 h1#title.display-3.text-center{
 	57px !important;
@@ -576,3 +535,98 @@ margin: 0px 0px !important;
 
 
 }
+
+
+#buttonContainer{
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+	h3#subTitle {
+	display: none !important;
+}
+
+
+div.footer-center{
+	text-align: left !important;
+}
+
+i.fa.fa-map-marker{
+	display: none;
+}
+
+i.fa.fa-phone{
+	display:none;
+}
+
+i.fa.fa-envelope{
+	display: none;
+}
+
+#coverShot{
+	background-position: 29% 80% !important;
+}
+
+#logoFooter{
+	width: 230px
+}
+
+#contactInfo{
+	font-size: 1rem;
+}
+#logo{
+	height: 50px;
+	}
+
+#socialIcons{
+	display: none;
+}
+
+.jumbotron{
+	height: 200px;
+}
+
+#title{
+	display: none;
+}
+
+}
+
+
+@media screen and (min-width: 1000px){
+ .fixed-top {
+     
+}
+.thumbnail img{
+    // your styles for the image
+    
+    height: 100%;
+    display: block;
+    padding: 0px 0px;
+
+}.img-thumbnail{
+	max-width: 300px;
+	
+    margin-left: auto;
+    margin-right: auto;
+     top: -9px;
+    position: relative;
+}
+
+
+
+ }

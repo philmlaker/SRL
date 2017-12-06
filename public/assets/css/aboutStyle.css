@@ -1,362 +1,321 @@
 /*font-family: 'Raleway', sans-serif;
 font-family: 'Open Sans', sans-serif;*/
+
+
 /*font-family: 'Droid Serif', serif;*/
 
+
 /* Move down content because we have a fixed navbar that is 50px tall */
+
 body {
-  padding-top: 4rem;
-  background-color: rgba(197, 197, 197, 0.26);
+    padding-top: 4rem;
+    background-color: rgba(197, 197, 197, 0.26);
 }
 
-#logo{
-	height: 55px;
-	
-
+#logo {
+    height: 55px;
 }
 
-ul.navbar-nav.mr-auto{
-	    margin-left: auto;
-	    font-size: 17px !important;
-	    font-family: 'Segoe UI', sans-serif;
-	    font-weight: bold;
+ul.navbar-nav.mr-auto {
+    margin-left: auto;
+    font-size: 17px !important;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
 }
+
 
 /*#offCenter{
 	padding-left: 0;
 	padding-right: 0;
 }*/
 
-#socialIcons{
-	width: 30px;
-	padding: 0px 0px;
-	margin: 5px 5px;
-	height: 30px;
+#socialIcons {
+    width: 30px;
+    padding: 0px 0px;
+    margin: 5px 5px;
+    height: 30px;
 }
 
-.dropdown-item:not(:last-child){
-	border-bottom: 1px solid #d4d4d4;
+.dropdown-item:not(:last-child) {
+    border-bottom: 1px solid #d4d4d4;
 }
 
-.dropdown-menu{
-	padding-top: 0px;
-	padding-bottom: 0px;
-
+.dropdown-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
-.dropdown-item{
-color: #002b5c;
-padding-top: 15px;
-padding-bottom: 15px;
+.dropdown-item {
+    color: #002b5c;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.dropdown-item:hover{
-	background-color: #002b5c;
-	color: white;
+.dropdown-item:hover {
+    background-color: #002b5c;
+    color: white;
 }
 
-#logoFooter{
-      width: 309px;
+#logoFooter {
+    width: 309px;
     margin-top: 28px;
- 
-
 }
 
 
-p{
+p {
     font-family: 'Varela Round', sans-serif !important;
     line-height: 37px;
     color: #333333;
-    text-align: justify;
+    text-align: left;
     font-size: 19px;
-
 }
-.footer-distributed{
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.33) 0%,#004b8d 100%);
-		background-color: #004b8d;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
 
-	padding: 55px 50px;
-	margin-top: 80px;
+.footer-distributed {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.33) 0%, #004b8d 100%);
+    background-color: #004b8d;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+
+    padding: 55px 50px;
+    margin-top: 80px;
 }
 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-	font-family: 'Varela Round', sans-serif;
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Varela Round', sans-serif;
 }
+
 
 /* Footer left */
 
-.footer-distributed .footer-left{
-	width: 36%;
-	    text-align: center;
+.footer-distributed .footer-left {
+    width: 36%;
+    text-align: center;
 }
+
 
 /* The company logo */
 
-.footer-distributed h3{
-	color:  #ffffff;
+.footer-distributed h3 {
+    color: #ffffff;
 
-	margin: 0;
+    margin: 0;
 }
 
-.footer-distributed h3 span{
-	color:  #5383d3;
+.footer-distributed h3 span {
+    color: #5383d3;
 }
+
 
 /* Footer links */
 
-.footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
-	padding: 0;
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
 }
 
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
 }
 
-.footer-distributed .footer-company-name{
-	color:  #8f9296;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
 }
+
 
 /* Footer Center */
 
-.footer-distributed .footer-center{
-	width: 35%;
+.footer-distributed .footer-center {
+    width: 35%;
 }
 
-.footer-distributed .footer-center i{
-	background-color:  #086bbe;
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-	
+.footer-distributed .footer-center i {
+    background-color: #086bbe;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
 }
 
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-	vertical-align: middle;
-	margin:0;
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
 }
 
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-	font-family: 'Varela Round', sans-serif;
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+    font-family: 'Varela Round', sans-serif;
 }
 
-.footer-distributed .footer-center p a{
-	color:  #5383d3;
-	text-decoration: none;;
+.footer-distributed .footer-center p a {
+    color: #5383d3;
+    text-decoration: none;
+    ;
 }
+
 
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
-	width: 20%;
+.footer-distributed .footer-right {
+    width: 20%;
 }
 
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  rgb(83, 131, 211);
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-	font-family: 'Varela Round', sans-serif;
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: rgb(83, 131, 211);
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
 }
 
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-	font-family: 'Varela Round', sans-serif;
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Varela Round', sans-serif;
 }
 
-.footer-distributed .footer-icons{
-	margin-top: 25px;
+.footer-distributed .footer-icons {
+    margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #086bbe;
-	border-radius: 2px;
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #086bbe;
+    border-radius: 2px;
 
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
 
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
+    margin-right: 3px;
+    margin-bottom: 5px;
 }
 
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 600px) {
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
-		text-align: center;
-	}
-
-	.footer-distributed .footer-right{
-		float: none;
-		margin: 0 auto 20px;
-	}
-
-	.footer-distributed .footer-left p.footer-links{
-		line-height: 1.8;
-	}
+.col-md-4 {
+    text-align: justify;
 }
 
-.col-md-4{
-	text-align: justify;
-}
 #credit {
-	font-size: 10px;
-}
-.jumbotron{
-
-	color: white;
-	height: 500px;
-
+    font-size: 10px;
 }
 
-#coverShot{
-	background: url('../images/lab.jpg') no-repeat;	
-	background-position: 99% 34%;
-	width: 100%;
+.jumbotron {
+
+    color: white;
+    height: 500px;
 }
 
-#coverShot4{
-	background: url('../images/AdobeStock_63608001.jpeg') no-repeat;	
-	background-position: 99% 87%;
-	width: 100%;
+#coverShot {
+    background: url('../images/lab.jpg') no-repeat;
+    background-position: 99% 34%;
+    width: 100%;
 }
 
-#about{
-	float: none;
+#coverShot4 {
+    background: url('../images/AdobeStock_63608001.jpeg') no-repeat;
+    background-position: 99% 87%;
+    width: 100%;
 }
+
+#about {
+    float: none;
+}
+
 .btn {
-	background-color: #002b5c;
-	color: white;
-	font-family: 'Open Sans', sans-serif;
-	border-radius: 60px;
+    background-color: #002b5c;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 60px;
     float: right;
 }
 
 .btn:hover {
-	background-color: #6a83b5;
-	border-color: white;
-
+    background-color: #6a83b5;
+    border-color: white;
 }
 
 
- .navbar{
-border-bottom: 2px solid #e4f2fa;
- 	
- 	    width: 100%;
- 	    margin: 0 0;
- }
+.navbar {
+    border-bottom: 2px solid #e4f2fa;
 
-
-}
-
-nav.navbar {
-
-	  
-}
-
-#subTitle{
-		color: #002b5c;
-	letter-spacing: 1px;
-	font-family: 'Raleway', sans-serif;
-
-	    margin: 0 101px;
-	        font-size: 23px;
+    width: 100%;
+    margin: 0 0;
 }
 
 
-@media screen and (max-width: 900px){
-#subTitle{
-	font-size: 17px !important;p
-}
-#title{
-	font-size: 50px !important;
+
+
+
+nav.navbar {}
+
+#subTitle {
+    color: #002b5c;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+
+    margin: 0 101px;
+    font-size: 23px;
 }
 
+
+
+
+#mainHeader {
+    min-height: 100vh;
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+
+    min-height: 100%;
+    /* These two lines are counted as one :-)       */
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
-#mainHeader{
-	min-height: 100vh;
-	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100%; /* These two lines are counted as one :-)       */
-  display: flex;
-justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-	
-}
-
-#title{
+#title {
     color: white;
     font-size: 85px;
     letter-spacing: 2px;
@@ -364,21 +323,21 @@ justify-content: center;
     text-shadow: 1px 1px 0px #010204;
     text-align: center;
     flex-grow: 1;
-  align-items: center;
-      margin-top: 14%;
+    align-items: center;
+    margin-top: 14%;
 }
 
-h2{
-	
-	font-family: 'Varela Round', sans-serif;
-text-align: center;
+h2 {
+
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
     color: #004b8d;
-font-size: 50px;
+    font-size: 50px;
 }
 
 
 
-h1:not(#title){
+h1:not(#title) {
 
     font-family: 'Droid Serif', serif;
     color: #004b8d;
@@ -387,88 +346,55 @@ h1:not(#title){
     width: 100%;
 
     text-align: center !important;
-
-  
 }
 
 
 
 
 
- #srlLogo{
- 	height: 25px;
- 	display: inline-block;
- 	margin-bottom: 5px;
- 	margin-top: 5px;
- }
-
-@media screen and (min-width: 1000px){
- .fixed-top {
-     
-}
-.thumbnail img{
-    // your styles for the image
-    
-    height: 100%;
-    display: block;
-    padding: 0px 0px;
-
-}.img-thumbnail{
-	max-width: 300px;
-	
-    margin-left: auto;
-    margin-right: auto;
-     top: -9px;
-    position: relative;
+#srlLogo {
+    height: 25px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
- }
 
-   div.row {
- 	    width: 100%;
- 	    margin: 0 0;
-
- }
-
- h2{
-	
-
-/*height: 14%;*/
+div.row {
+    width: 100%;
+    margin: 0 0;
 }
-p{
 
-/*height: 50%;
+h2 {
+    /*height: 14%;*/
+}
+p {
+    /*height: 50%;
 margin-bottom: 5px;*/
 }
-#subTitle{
+#subTitle {
 
-	line-height: 40px;
-	margin-bottom: 0px;
-
+    line-height: 40px;
+    margin-bottom: 0px;
 }
-.thumbnail{   
-margin-top: 15%;     
-    width: 100%; 
+.thumbnail {
+    margin-top: 15%;
+    width: 100%;
     height: 150px;
     overflow: hidden;
-
-
-
-
 }
 
 #iconBox {
-	margin-left:12%;
+    margin-left: 12%;
 }
-#logo{
-	height: 55px;
-	
-
-}
+#logo {
+    height: 55px;
 }
 
-h2{
-	margin: 10px 0px;
+
+
+h2 {
+    margin: 10px 0px;
 
     text-align: left;
 }
@@ -479,175 +405,400 @@ h2{
     align-items: center;
 }
 
-ul{
-	line-height: 30px;
-	font-size: 21px !important;
-	
+ul {
+    line-height: 30px;
+    font-size: 21px !important;
 }
 
-#profit{
-	
-	height: 500px;
-	padding: 0px 0px;
-	margin: 0px 0px;
+#profit {
+
+    height: 500px;
+    padding: 0px 0px;
+    margin: 0px 0px;
 }
 
-#profitList{
-		min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100%; /* These two lines are counted as one :-)       */
-  display: flex;
-justify-content: center;
-  flex-direction: column;
-  text-align: left;
-list-style-type: none;
-padding: 15px 15px;
-margin: 0;
-margin-left: 1em;
-font-size: 18px;
+#profitList {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100%;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    list-style-type: none;
+    padding: 15px 15px;
+    margin: 0;
+    margin-left: 1em;
+    font-size: 18px;
 
-font-weight: bold;
-color: #004b8d;
+    font-weight: bold;
+    color: #004b8d;
 }
 
-#profitList li{
+#profitList li {
 
-	background-repeat: no-repeat;
-margin: 0 0 50px -120px;
-padding-left: 4.6em;
-height: 60px;
- font-family: 'Droid Serif', serif;
+    background-repeat: no-repeat;
+    margin: 0 0 50px -120px;
+    padding-left: 4.6em;
+    height: 60px;
+    font-family: 'Droid Serif',
+    serif;
 }
 
-#lever{
-	height: 500px;
+#lever {
+    height: 500px;
 }
 
-#leverList li{
-min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100%; /* These two lines are counted as one :-)       */
-  display: flex;
-justify-content: center;
-  flex-direction: column;
-  text-align: left;
-list-style-type: none;
-padding: 15px 15px;
-margin: 0;
-margin-left: 1em;
-font-size: 18px;
+#leverList li {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100%;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    list-style-type: none;
+    padding: 15px 15px;
+    margin: 0;
+    margin-left: 1em;
+    font-size: 18px;
 
-font-weight: bold;
-color: #004b8d;
- font-family: 'Droid Serif', serif;
+    font-weight: bold;
+    color: #004b8d;
+    font-family: 'Droid Serif',
+    serif;
 }
 
-#leverList li{
-	background-image: url("/assets/images/beakerAbout.svg");
-	background-repeat: no-repeat;
-margin: 0 0 50px 0;
-padding-left: 4.6em;
-height: 30px;
+#leverList li {
+    background-image: url("/assets/images/beakerAbout.svg");
+    background-repeat: no-repeat;
+    margin: 0 0 50px 0;
+    padding-left: 4.6em;
+    height: 30px;
 }
 
-#list{
-	
+#list {}
+
+#devtext {
+    margin-top: 5%;
+    text-align: justify;
+    font-size: 15px;
+
+    font-family: 'Varela Round',
+    sans-serif !important;
 }
 
-#devtext{
-	    margin-top: 5%;
-	text-align: justify;
-	font-size: 15px;
-
-	font-family: 'Varela Round', sans-serif !important;
-}
-
-#bullet{
+#bullet {
     max-width: 53px;
     max-height: 53px;
     margin-right: 14px;
 }
 
-.icons{
-	height: 250px;
-	text-align: center;
+.icons {
+    height: 250px;
+    text-align: center;
 }
 
-#rightFlow{
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
-background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
- border-radius: 60px;
+#rightFlow {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+    background: -moz-linear-gradient(left,
+    rgba(255,
+    255,
+    255,
+    1) 0%,
+    rgba(255,
+    255,
+    255,
+    0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,
+    rgba(255,
+    255,
+    255,
+    1) 0%,
+    rgba(255,
+    255,
+    255,
+    0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,
+    rgba(255,
+    255,
+    255,
+    1) 0%,
+    rgba(255,
+    255,
+    255,
+    0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+    endColorstr='#00ffffff',
+    GradientType=1);
+    /* IE6-9 */
+    border-radius: 60px;
     padding-bottom: 72px;
     padding-left: 74px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-#leftFlow{
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
-background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
-padding-bottom: 72px;
- border-radius: 60px;
-  padding-right: 74px;
-
+#leftFlow {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+    background: -moz-linear-gradient(left,
+    rgba(255,
+    255,
+    255,
+    0) 0%,
+    rgba(255,
+    255,
+    255,
+    1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,
+    rgba(255,
+    255,
+    255,
+    0) 0%,
+    rgba(255,
+    255,
+    255,
+    1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,
+    rgba(255,
+    255,
+    255,
+    0) 0%,
+    rgba(255,
+    255,
+    255,
+    1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff',
+    endColorstr='#ffffff',
+    GradientType=1);
+    /* IE6-9 */
+    padding-bottom: 72px;
+    border-radius: 60px;
+    padding-right: 74px;
+     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-#aboutUsimage{
-	margin-top: 35px;
-	width: 900px;
-	        border: 6px solid white;
+#aboutUsimage {
 
+    width: 900px;
+    border: 6px solid white;
 }
 
 
-#photoContain{
-display: flex;
+#photoContain {
+    display: flex;
 
-  align-items: center;
-  justify-content: center;
-
+    align-items: center;
+    justify-content: center;
 }
 
-ul{
-	   
+ul {
+
 
     color: #004b8d;
     text-align: justify;
     font-size: 17px;
 
     list-style-type: circle;
-
-
 }
 
-li#bullet2{
-	color: #333333;
-	 margin-bottom: 23px;
-	 line-height: 17px
-	  font-family: 'Varela Round', sans-serif !important;
+li#bullet2 {
+    color: #333333;
+    margin-bottom: 23px;
+    line-height: 17px;
+     font-family: 'Varela Round',
+    sans-serif !important;
 }
 
-.leftimg{
-	margin-right: 80px;
+.leftimg {
+    margin-right: 80px;
 }
 
-.rightimg{
-	margin-left: 53px;
+.rightimg {
+    margin-left: 53px;
 }
 
 #leverList:first-child {
-	margin-top: 27px;
+    margin-top: 27px;
 }
 
-#hospitalContainer{
-    background-color: rgba(255, 255, 255, 0.43);
+#hospitalContainer {
+    background-color: rgba(255,
+    255,
+    255,
+    0.43);
     border-radius: 78px;
-};
+}
+
 
 #devtext2 {
     background-color: white;
     border-radius: 47px;
     padding: 38px 39px;
-};
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+
+
+	body {
+		padding: 0px 0px;
+
+	}
+	
+ 	#navigation {
+ 		position: static !important;
+ 	}
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+    #subTitle {
+        font-size: 17px !important;
+        
+    }
+
+    #title {
+        font-size: 50px !important;
+    }
+
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        text-align: center;
+    }
+
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+
+    div.footer-center{
+	text-align: left !important;
+}
+
+i.fa.fa-map-marker{
+	display: none;
+}
+
+i.fa.fa-phone{
+	display:none;
+}
+
+i.fa.fa-envelope{
+	display: none;
+}
+
+#coverShot{
+	background-position: 23% 60% !important;
+}
+
+#logoFooter{
+	width: 230px
+}
+
+p{
+	font-size: 1rem !important;
+}
+#logo{
+	height: 50px;
+	}
+
+#socialIcons{
+	display: none;
+}
+
+#aboutUsimage{
+	width: 100%;
+}
+.icons{
+	height: 154px;
+	text-align: center;
+	display: none;
+}
+
+h2{
+	font-size: 2rem;
+	text-align: center;
+}
+
+li#bullet2{
+	font-size: 1rem;
+}
+
+#rightFlow {
+	padding: 0px 0px !important
+
+}
+
+#leftFlow{
+	padding: 0px 0px !important;
+}
+
+#devtext2{
+	background-color: #efefef;
+	padding: 0px 0px;
+}
+
+.jumbotron {
+	height: 200px;
+}
+}
+
+// @media screen and (min-width: 801px) {
+//     .fixed-top {}
+
+//     .thumbnail img {
+//         // your styles for the image
+//         height: 100%;
+//         display: block;
+//         padding: 0px 0px;
+//     }
+
+//     .img-thumbnail {
+//         max-width: 300px;
+
+//         margin-left: auto;
+//         margin-right: auto;
+//         top: -9px;
+//         position: relative;
+//     }
+// }
+
+
+
+
+
+/* If you don't want the footer to be responsive, remove these media queries */

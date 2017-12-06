@@ -190,46 +190,7 @@ ul.navbar-nav.mr-auto{
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
 
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
-}
-
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 600px) {
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
-		text-align: center;
-	}
-
-	.footer-distributed .footer-right{
-		float: none;
-		margin: 0 auto 20px;
-	}
-
-	.footer-distributed .footer-left p.footer-links{
-		line-height: 1.8;
-	}
-}
 
 
 .dropdown-menu{
@@ -466,3 +427,106 @@ img{
 
 
 
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+ div.footer-center{
+	text-align: left !important;
+}
+
+i.fa.fa-map-marker{
+	display: none;
+}
+
+i.fa.fa-phone{
+	display:none;
+}
+
+i.fa.fa-envelope{
+	display: none;
+}
+
+#coverShot{
+	background-position: 23% 60% !important;
+}
+
+#logoFooter{
+	width: 230px
+}
+.jumbotron {
+	height: 200px !important;
+}
+
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+	.jumbotron {
+	height: 200px !important;
+}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+
+	 div.footer-center{
+	text-align: left !important;
+}
+
+i.fa.fa-map-marker{
+	display: none;
+}
+
+i.fa.fa-phone{
+	display:none;
+}
+
+i.fa.fa-envelope{
+	display: none;
+}
+
+#coverShot{
+	background-position: 23% 60% !important;
+}
+
+#logoFooter{
+	width: 230px
+}
+
+.icons{
+	height: 154px;
+	text-align: center;
+	display: none;
+}
+
+#socialIcons{
+	display:none;
+}
+}

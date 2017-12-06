@@ -567,3 +567,55 @@ h2 a {
 .container td:nth-child(4),
 .container th:nth-child(4) { display: none; }
 }
+
+@media (max-width: 600px) {
+	.jumbotron {
+	height: 200px !important;
+}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+
+	 div.footer-center{
+	text-align: left !important;
+}
+
+i.fa.fa-map-marker{
+	display: none;
+}
+
+i.fa.fa-phone{
+	display:none;
+}
+
+i.fa.fa-envelope{
+	display: none;
+}
+
+#coverShot{
+	background-position: 23% 60% !important;
+}
+
+#logoFooter{
+	width: 230px
+}
+
+#title{
+	font-size: 35px !important;
+}
+
+#socialIcons{
+	display: none;
+}
+}
