@@ -278,13 +278,13 @@ justify-content: center;
 
 h2{
 	
-font-family: 'Droid Serif', serif;
+    font-family: 'Varela Round', sans-serif !important;
 text-align: center;
 color: grey;
 }
 
 p{
-font-family: 'Raleway', sans-serif;
+    font-family: 'Varela Round', sans-serif !important;
 line-height: 25px;
 
 
@@ -292,7 +292,7 @@ line-height: 25px;
 
 h1:not(#title){
 	color: #004b8d;
-	font-family: 'Droid Serif', serif;
+	        font-family: 'Droid Serif', serif;
 	opacity: 0.9;
 	margin: 20px 0px;
 

@@ -47,7 +47,10 @@ margin-left:12%;
 
 
 
-}.dropdown-item:not(:last-child){
+}
+
+
+.dropdown-item:not(:last-child){
 	border-bottom: 1px solid #d4d4d4;
 }
 
@@ -167,7 +170,7 @@ text-align: left;
 
 h1:not(#title){
 	color: #002b5c;
-	font-family: 'Droid Serif', serif;
+font-family: 'Varela Round', sans-serif !important;
 	opacity: 0.9;
 	margin: 5px 0px;
 	font-size: 20px;
@@ -493,7 +496,7 @@ background-image: linear-gradient(to bottom, rgba(204, 230, 245, 0.55) 0%, rgba(
 h3:not(#subTitle){
 	font-size: 1.1rem !important;
 	    margin-bottom: 12px;
-	  
+	  font-family: 'Varela Round', sans-serif !important;
 	    padding: 5px;
 	    color: #002b5c;
 	   
@@ -505,14 +508,14 @@ h3:not(#subTitle){
 
 
 #dept:hover {
-	color: red;
+	color: rgb(227, 25, 55);
 	cursor: pointer;
 	
 }
 
 
 #test:hover {
-	color: red;
+	color: rgb(227, 25, 55);
 	 cursor: pointer;
 
 }

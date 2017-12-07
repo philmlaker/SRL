@@ -412,12 +412,12 @@ h4{
 	text-align: center;
 	color: #616161;
 	font-size: 17px;
-
+       font-family: 'Droid Serif', serif;
 }
 h5{
 	text-align: center;
 	font-size: 14px;
-
+    font-family: 'Varela Round', sans-serif !important;
 }
 
 img{

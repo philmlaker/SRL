@@ -2,6 +2,8 @@
     $(document).ready(function () {
 
 
+
+
       
         $('.dropdown-toggle').dropdown();
 
@@ -21,7 +23,7 @@ $(document).on('click', '#test', function(){
   $('#results').empty();
   $('#results').show();
     $(".test").css("color", "rgb(0, 43, 92)");
-     $(this).css("color", "red");
+     $(this).css("color", "rgb(227, 25, 55)");
 
   console.log( $(this).attr( "value" ));
   var testValue = $(this).attr( "value" );
