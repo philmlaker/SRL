@@ -3,7 +3,11 @@ font-family: 'Open Sans', sans-serif;*/
 /*font-family: 'Droid Serif', serif;*/
 
 
-
+#titleMain{
+	color: white !important;
+	font-family: 'Droid Serif', serif;
+    text-shadow: 1px 1px 0px #010204;
+}
 
 
 

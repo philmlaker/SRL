@@ -614,7 +614,7 @@ ul {
 li#bullet2 {
     color: #333333;
     margin-bottom: 23px;
-    line-height: 17px;
+    line-height: 32px;
      font-family: 'Varela Round',
     sans-serif !important;
 }
@@ -644,6 +644,7 @@ li#bullet2 {
     background-color: white;
     border-radius: 47px;
     padding: 38px 39px;
+    margin-bottom: 55px;
 }
 
 
