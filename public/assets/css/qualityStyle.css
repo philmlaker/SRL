@@ -188,46 +188,7 @@ margin-left:12%;
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
-
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
-}
-
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 600px) {
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
-		text-align: center;
-	}
-
-	.footer-distributed .footer-right{
-		float: none;
-		margin: 0 auto 20px;
-	}
-
-	.footer-distributed .footer-left p.footer-links{
-		line-height: 1.8;
-	}
-}
+@
 
 
 
@@ -516,3 +477,116 @@ padding-bottom: 15px;
 }
 
 
+media (max-width: 880px) {
+
+
+
+
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+		.jumbotron{
+		height: 275px;
+	}
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+	h3#subTitle {
+	display: none !important;
+}
+
+
+div.footer-center{
+	text-align: left !important;
+}
+
+i.fa.fa-map-marker{
+	display: none;
+}
+
+i.fa.fa-phone{
+	display:none;
+}
+
+i.fa.fa-envelope{
+	display: none;
+}
+
+#coverShot{
+	background-position: 29% 80% !important;
+}
+
+#logoFooter{
+	width: 230px
+}
+
+#contactInfo{
+	font-size: 1rem;
+}
+#logo{
+	height: 50px;
+	}
+
+#socialIcons{
+	display: none;
+}
+
+.jumbotron{
+	height: 200px;
+}
+
+h1{
+	text-align: center;
+	width: 100%;
+}
+p{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+}

@@ -759,12 +759,16 @@ li#bullet2{
 }
 
 #rightFlow {
-	padding: 0px 0px !important
+	padding: 0px 0px !important;
+     background-color: #efefef;
+     background:none;
 
 }
 
 #leftFlow{
 	padding: 0px 0px !important;
+    background-color: #efefef;
+     background:none;
 }
 
 #devtext2{
@@ -773,8 +777,49 @@ li#bullet2{
 }
 
 .jumbotron {
-	height: 200px;
+	height: 275px;
 }
+
+#email{
+	font-size: 13px;
+}
+
+#profit{
+    width: 100%;
+    height: auto;
+
+}
+
+#profileList li{
+    font-size: 0.8rem !important;
+    text-align: center;
+
+}
+
+#leverList li{
+    font-size: 0.8rem !important;
+}
+ul#profitList{
+    text-align: center;
+}
+#lever{
+    width: 100%;
+    height: auto;
+}
+
+ul#leverList{
+    padding: 0px 0px !important;
+}
+
+ul:not(#profitList){
+    font-size: 15px !important;
+    padding: 0px 0px;
+}
+
+#bullet{
+    display: none;
+}
+
 }
 
 // @media screen and (min-width: 801px) {

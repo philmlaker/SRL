@@ -600,10 +600,23 @@ i.fa.fa-envelope{
 	height: 200px;
 }
 
-#title{
-	display: none;
+
+#labs{
+	background-color: #efefef !important;
 }
 
+
+#title2{
+	    font-size: 50px !important;
+}
+
+#contactMain{
+	font-size: 100%;
+}
+
+#titlemain{
+	display: none;
+}
 }
 
 
